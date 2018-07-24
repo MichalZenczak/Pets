@@ -66,6 +66,7 @@
     <string name="editor_insert_pet_failed">Error with saving pet</string>
     <string name="editor_update_pet_failed">Pet update failed</string>
     <string name="editor_update_pet_successful">Pet updated successfully</string>
+    <string name="editor_save_pet_no_name_or_breed_provided">Pet should have a name and breed</string>
 
     <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
     <string name="empty_view_title_text">It\'s a bit lonely here...</string>
