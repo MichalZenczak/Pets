@@ -232,10 +232,10 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         // (This should be the only row in the cursor)
         if (data.moveToFirst()) {
             // Extract out the value from the Cursor for the given column index
-            String name = data.getString(data.getColumnIndex(PetEntry.TABLE_NAME));
-            String breed = data.getString(data.getColumnIndex(PetEntry.COLUMN_PET_BREED));
-            int gender = data.getInt(data.getColumnIndex(PetEntry.COLUMN_PET_GENDER));
-            int weight = data.getInt(data.getColumnIndex(PetEntry.COLUMN_PET_WEIGHT));
+            String name = data.getString(data.getColumnIndexOrThrow(PetEntry.COLUMN_PET_NAME));
+            String breed = data.getString(data.getColumnIndexOrThrow(PetEntry.COLUMN_PET_BREED));
+            int gender = data.getInt(data.getColumnIndexOrThrow(PetEntry.COLUMN_PET_GENDER));
+            int weight = data.getInt(data.getColumnIndexOrThrow(PetEntry.COLUMN_PET_WEIGHT));
             // Update the views on the screen with the values from the database
             mNameEditText.setText(name);
             mBreedEditText.setText(breed);
