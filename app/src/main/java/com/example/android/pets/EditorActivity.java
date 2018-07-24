@@ -188,7 +188,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         String breedString = mBreedEditText.getText().toString().trim();
         String weightString = mWeightEditText.getText().toString().trim();
 
-        if (TextUtils.isEmpty(nameString) || TextUtils.isEmpty(breedString)) {
+        if (TextUtils.isEmpty(nameString) && TextUtils.isEmpty(breedString)) {
             //If the user did not provide a name or breed - show this toast
             Toast.makeText(this, getResources().getString(R.string.editor_save_pet_no_name_or_breed_provided),
                     Toast.LENGTH_SHORT).show();

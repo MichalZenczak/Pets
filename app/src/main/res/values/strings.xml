@@ -70,7 +70,7 @@
 
     <string name="editor_update_pet_successful">Pet updated successfully</string>
 
-    <string name="editor_save_pet_no_name_or_breed_provided">Pet should have a name and breed</string>
+    <string name="editor_save_pet_no_name_or_breed_provided">Pet should have a name or breed</string>
 
     <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
     <string name="empty_view_title_text">It\'s a bit lonely here...</string>
@@ -101,4 +101,7 @@
 
     <!-- Dialog button text for the option to cancel deletion of the current pet [CHAR LIMIT=20] -->
     <string name="cancel">Cancel</string>
+
+    <!-- Label for the pet's breed if the breed is unknown [CHAR LIMIT=20] -->
+    <string name="unknown_breed">Unknown breed</string>
 </resources>
